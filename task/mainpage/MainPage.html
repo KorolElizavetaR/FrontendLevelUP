@@ -6,118 +6,139 @@
     <title>Barber Shop Borodinski</title>
     <link rel="stylesheet" href="styling.css">
 </head>
+<body>
+    <div class="container">
 
-<body style="background-color:rgb(41, 39, 37)">
-    <header class="top__menu">
-        <div class="top__menu__container">
-            <a href="#">Информация</a>
-            <a href="#">Новости</a>
-            <a href="#">Прайс-Лист</a>
-            <a href="ShopPage.html">Магазин</a>
-            <a href="#">Контакты</a>
-            <a href="#"><button class="login" style="background-color: darkcyan;"><img src="elements/login.svg" alt="login__icon">Вход</button></a>
+    <header class="top_menu">
+        <div class="top_menu__nav_bar">
+            <a href="#">ИНФОРМАЦИЯ</a>
+            <a href="#">НОВОСТИ</a>
+            <a href="#">ПРАЙС-ЛИСТ</a>
+            <a href="#">МАГАЗИН</a>
+            <a href="#">КОНТАКТЫ</a>
+            <a href="#" class="top_menu__nav_bar__login_button"><img src="elements/login.svg" alt="login__icon" style="padding-right: 1dvh;">ВХОД</a>
         </div>
     </header>
 
     <main class="main__content">
+
         <div class="content__logo__image">
             <img src="elements/logo.svg" alt="logo" class="logo__image">
         </div>
-        <section class="information__section">
-            <div class="row">
-                <div class="column">
-                    <p class="information__section__header"><b>БЫСТРО</b></p>
+
+        <section class="information_section">
+                <div class="information_section__column">
+                    <p class="information_section__header"><b>БЫСТРО</b></p>
                     <img src="elements/shape.svg" alt="shape__section" class="shape">
                     <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
                 </div>
-                <div class="column">
-                    <p class="information__section__header"><b>КРУТО</b></p>
+                <div class="information_section__column">
+                    <p class="information_section__header"><b>КРУТО</b></p>
                     <img src="elements/shape.svg" alt="shape__section" class="shape">
-                    <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+                    <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
                 </div>
-                <div class="column">
-                    <p class="information__section__header"><b>ДОРОГО</b></p>
+                <div class="information_section__column">
+                    <p class="information_section__header"><b>ДОРОГО</b></p>
                     <img src="elements/shape.svg" alt="shape__section" class="shape">
                     <p>Встретились два еврея и один другого спросил.<br>
                         - Слушай, Авраам, займи два рубля.<br>
                         - У меня только один.<br>
                         - Давай пока один, второй должен будешь.</p>
                 </div>
-            </div>
         </section>
-        <section class="news__section">
-            <div class="column__two">
-                <p class="information__section__header"><b>НОВОСТИ</b></p>
-                <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ<br><br>
+
+        <section class="news_section">
+            <div class="news_section__rows">
+                <div class="news__section__columns">
+                    <p class="news_section__header">НОВОСТИ</p>
+                    <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ<br><br>
                     11 января<br>
                     В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ 
                     СТРОЙНЫЕ РЯДЫ<br><br>
                     18 января
-                </p>
-                <button class="new__selection__news__button"><a href="#">ВСЕ НОВОСТИ</a></button>
-            </div>
-            <div class="column__two">
-                <p class="information__section__header" style="padding-bottom: 15px;"><b>ФОТОГАЛЕРЕЯ</b></p>
-                <img src="elements/photogalery.svg" alt="photogalery">
-                <div>
-                    <button>ВПЕРЕД</button>
-                    <button>НАЗАД</button>
+                    </p>
+                    <button class="news_section__all_news_button"><a href="#">ВСЕ НОВОСТИ</a></button>
+                </div>
+                <div class="news__section__columns">
+                    <p class="news_section__header">ФОТОГАЛЕРЕЯ</p>
+                    <img src="elements/photogalery.svg" alt="photogalery">
+                    <div class="news_section__photo_nav_button">
+                        <button>ВПЕРЕД</button>
+                        <button>НАЗАД</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="news__section">
-            <div class="column__two">
-            <p class="information__section__header"><b>КОНТАКТНАЯ ИНФОРМАЦИЯ</b></p>
-                <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-                    АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
-                    ТЕЛЕФОН: +7 (495) 666-02-66
-                </p>
-                <p>ВРЕМЯ РАБОТЫ:<br>ПН—ПТ: С 10:00 ДО 22:00<br>СБ—ВС: С 10:00 ДО 19:00
-                </p>
-                <div>
-                    <button><a href="#">КАК ПРОЕХАТЬ</a></button>
-                    <button><a href="#">ОБРАТНАЯ СВЯЗЬ</a></button>
+        <section class="booking_section">
+            <div class="booking_section__rows">
+                <div class="booking_section__columns">
+                    <p class="booking_section__header"><b>КОНТАКТНАЯ ИНФОРМАЦИЯ</b></p>
+                    <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+                        АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+                        ТЕЛЕФОН: +7 (495) 666-02-66
+                    </p>
+                    <p>ВРЕМЯ РАБОТЫ:<br>ПН—ПТ: С 10:00 ДО 22:00<br>СБ—ВС: С 10:00 ДО 19:00
+                    </p>
+
+                    <div class = "booking_section__buttons">
+                        <button><a href="#">КАК ПРОЕХАТЬ</a></button>
+                        <button><a href="#">ОБРАТНАЯ СВЯЗЬ</a></button>
+                    </div>
+
                 </div>
-            </div>
-            <div class="column__two">
-                <p class="information__section__header"><b>ЗАПИСАТЬСЯ</b></p>
-                <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ
-                    С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
-                </p>
-                <form action="#">
-                    <label for="date">ДАТА</label>
-                    <input type="text" id="date" name="date"><br>
-                    <label for="date">ВРЕМЯ</label>
-                    <input type="text" id="date" name="date"><br>
-                    <label for="name">ВАШЕ ИМЯ</label>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="phonenum">ТЕЛЕФОН</label>
-                    <input type="text" id="phonenum" name="phonenum"><br>
-                    <input type="submit" value="ОТПРАВИТЬ">
-                  </form>
+                <div class="booking_section__columns">
+                    <p class="booking_section__header"><b>ЗАПИСАТЬСЯ</b></p>
+                    <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ
+                        С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+                    </p>
+                    <form class="booking_section__form" action="#">
+                        <div class="booking_section__form_textfield">
+                            <div>
+                                <label for="date">ДАТА</label>
+                                <input type="text" id="date" name="date"><br>
+                            </div>
+                            <div>
+                                <label for="date">ВРЕМЯ</label>
+                                <input type="text" id="date" name="date"><br>
+                            </div>
+                            <div>
+                                <label for="name">ВАШЕ ИМЯ</label>
+                                <input type="text" id="name" name="name"><br>
+                            </div>
+                            <div>    
+                                <label for="phonenum">ТЕЛЕФОН</label>
+                                <input type="text" id="phonenum" name="phonenum"><br>
+                            </div>
+                        </div>
+                        <input type="submit" value="ОТПРАВИТЬ">
+                    </form>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="bottom__information">
-        <div class="row">
-        <div class="column">
-            <p>
-            БАРБЕРШОП «БОРОДИНСКИЙ»<br>AДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>КАК НАС НАЙТИ?<br>ТЕЛЕФОН: +7 (495) 666-02-66
-            </p>
-        </div>
-        <div class="column">
-            <p style="padding-bottom: 10px;">Давайте дружить!</p>
-            <div>
-            <img src="elements/vk.svg" alt="vk" style="padding: 10px;">
-            <img src="elements/facebook.svg" alt="facebook" style="padding: 10px;">
-            <img src="elements/insta.svg" alt="insta" style="padding: 10px;">
+
+    <footer class="bottom_information">
+        <div class="bottom_information__row">
+            <div class="bottom_information__column">
+                <p>
+                БАРБЕРШОП «БОРОДИНСКИЙ»<br>AДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>КАК НАС НАЙТИ?<br>ТЕЛЕФОН: +7 (495) 666-02-66
+                </p>
+            </div>
+            <div class="bottom_information__column">
+                <p style="text-align: center;">Давайте дружить!</p>
+                <div>
+                <img src="elements/vk.svg" alt="vk" style="padding: 10px;">
+                <img src="elements/facebook.svg" alt="facebook" style="padding: 10px;">
+                <img src="elements/insta.svg" alt="insta" style="padding: 10px;">
+                </div>
+            </div>
+            <div class="bottom_information__column">
+                Я разработчик хамстер комбата
             </div>
         </div>
-        <div class="column">
-            Я разработчик хамстер комбата
-        </div>
-        </div>
     </footer>
+
+</div>
 </body>
 </html>
