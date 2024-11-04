@@ -1,0 +1,112 @@
+:root {
+    --left-padding: 20%;
+    --right-padding: 20%;
+    --font-size-title: 24px;
+    --font-size-text: 14px;
+    --font-size-button: 16px;
+  }
+
+body {
+  width: 100%;
+  background-image: url(resources/background.png);
+  background-size: cover;
+  margin:0;
+  padding:0;
+  font-family: 'Calibri', 'Courier New', Courier, monospace;
+  font-size: var(--font-size-text);
+}
+
+/* блоки? хз*/
+.button-text{
+  color: #f2f2f2;
+  font-size: var(--font-size-button);
+}
+
+.title-text {
+  font-size: var(--font-size-title);
+  font-weight: bolder;
+}
+
+.white-block{
+  display: flex;
+  justify-content: space-evenly;
+  background: #ffffff;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 6vh;
+  margin-bottom: 10vh;
+}
+
+.white-block__column{
+  flex: 25%;
+  display: flex;           
+  align-items: left;
+  text-align: left;         
+  flex-direction: column;
+  padding: 5vh; 
+}
+
+/*не был уверен, модификатор ли это или элемент, поэтому назвал по конвенции блока))*/
+.paddings{
+    padding-left: var(--left-padding);
+    padding-right: var(--right-padding);
+}
+
+.navbar{
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  height: 7vh;
+  align-items: center;
+}
+
+.navbar__button{
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  color: #f2f2f2;
+  height: 100%;
+  padding: 0 1.3vh;
+  text-decoration: none;
+  align-items: center;
+}
+
+.navbar__button:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar__button_login{
+  margin-left: auto;
+  padding: 0 2vh;
+}
+
+.navbar__button_login img{
+ padding-right: 1vb;
+}
+
+.logo {
+  display: flex;                 
+  justify-content: center;        
+  align-items: center;           
+  height: auto;                
+  padding: 10vh 10vh;
+  box-sizing: border-box;         /* UNNECCESARY */
+}
+
+.info{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2vh;
+  padding-bottom:  4vh;
+}
+
+.info-block {
+  color: #fff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  flex: 30%;
+  display: flex;             
+  align-items: center;
+  text-align: center;         
+  flex-direction: column;
+  padding: 1vh;     
+}
