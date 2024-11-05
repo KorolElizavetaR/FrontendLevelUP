@@ -56,6 +56,10 @@ body {
   height: 6vh;
 }
 
+.white-block__button_full-width{
+  width: 100%;
+}
+
 .white-block__button:hover{
   background-color: #333; 
 }
@@ -127,4 +131,32 @@ body {
   text-align: center;         
   flex-direction: column;
   padding: 1vh;     
+}
+
+.reg-form-fields{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2vh;
+  padding-bottom: 3vh;
+}
+
+.reg-form-fields label {
+  margin-bottom: 2vh;
+  font-weight: bold;
+  padding-left: 1vh;
+  text-align: left;
+}
+
+.reg-form-fields input[type="text"] {
+  width: 100%;
+  margin-top: 1vh;
+  padding: 1.5vh;
+  box-sizing: border-box;
+  border: 3px solid black;
+}
+
+.divider{
+  content: url(resources/divider.png);
+  height: 75%;
+  align-self: center;
 }
