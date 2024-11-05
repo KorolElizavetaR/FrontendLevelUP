@@ -34,7 +34,7 @@ body {
   /* width: 100%; */
   height: auto;
   text-align: left;
-  margin-top: 4vh; /* я знаю что так нельзя но не знаю как по-другому(( */
+  margin-bottom: 4vh; /* я знаю что так нельзя но не знаю как по-другому(( */
 }
 
 .white-block__column{
@@ -160,3 +160,31 @@ body {
   height: 75%;
   align-self: center;
 }
+
+footer{
+  background-color: #242424;
+  align-items: center;
+  text-align: left; 
+  align-content: center;
+  width: 100%;
+  height: auto;
+  padding-top: 2vb;
+  padding-bottom: 2vb;
+}
+
+.footer-rows{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-rows__images img{
+  display: inline-block;
+  background-color: black;
+  padding: 10px;
+  width: 3vh;
+  height: 3vh;   
+  object-fit: contain;
+}
+
