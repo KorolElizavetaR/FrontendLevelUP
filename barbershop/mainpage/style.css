@@ -1,8 +1,8 @@
 :root {
-    --left-padding: 20%;
-    --right-padding: 20%;
+    --left-padding: 15%;
+    --right-padding: 15%;
     --font-size-title: 24px;
-    --font-size-text: 14px;
+    --font-size-text: 16px;
     --font-size-button: 16px;
   }
 
@@ -30,11 +30,11 @@ body {
 .white-block{
   display: flex;
   justify-content: space-evenly;
-  background: #ffffff;
-  width: 100%;
+  background: #F6F3F0;
+  /* width: 100%; */
+  height: auto;
   text-align: left;
-  padding-bottom: 6vh;
-  margin-bottom: 10vh;
+  margin-top: 4vh; /* я знаю что так нельзя но не знаю как по-другому(( */
 }
 
 .white-block__column{
@@ -43,10 +43,30 @@ body {
   align-items: left;
   text-align: left;         
   flex-direction: column;
-  padding: 5vh; 
+  padding: 6vh; 
 }
 
-/*не был уверен, модификатор ли это или элемент, поэтому назвал по конвенции блока))*/
+.white-block__button{
+  margin-top: 1vh;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: none;
+  width: 45%;
+  height: 6vh;
+}
+
+.white-block__button:hover{
+  background-color: #333; 
+}
+
+.white-block__buttons-container{
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .paddings{
     padding-left: var(--left-padding);
     padding-right: var(--right-padding);
@@ -90,7 +110,6 @@ body {
   align-items: center;           
   height: auto;                
   padding: 10vh 10vh;
-  box-sizing: border-box;         /* UNNECCESARY */
 }
 
 .info{
@@ -102,7 +121,6 @@ body {
 
 .info-block {
   color: #fff;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   flex: 30%;
   display: flex;             
   align-items: center;

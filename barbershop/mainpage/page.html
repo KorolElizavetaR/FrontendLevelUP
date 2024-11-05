@@ -1,67 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-      <header class="navbar paddings">
-        <a href="#" class="button-text navbar__button">ИНФОРМАЦИЯ</a>
-        <a href="#" class="button-text navbar__button">НОВОСТИ</a>
-        <a href="#" class="button-text navbar__button">ПРАЙС-ЛИСТ</a>
-        <a href="#" class="button-text navbar__button">МАГАЗИН</a>
-        <a href="#" class="button-text navbar__button">КОНТАКТЫ</a>
-        <a href="#" class="button-text navbar__button navbar__button_login"><img src="resources/login.svg" alt="login__icon">ВХОД</a>
-      </header>
-      <main class="paddings">
-        <div class="logo">
-          <img src="resources/logo.svg" class="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="navbar paddings">
+    <a href="#" class="button-text navbar__button">ИНФОРМАЦИЯ</a>
+    <a href="#" class="button-text navbar__button">НОВОСТИ</a>
+    <a href="#" class="button-text navbar__button">ПРАЙС-ЛИСТ</a>
+    <a href="#" class="button-text navbar__button">МАГАЗИН</a>
+    <a href="#" class="button-text navbar__button">КОНТАКТЫ</a>
+    <a href="#" class="button-text navbar__button navbar__button_login"><img src="resources/login.svg"
+        alt="login__icon">ВХОД</a>
+  </header>
+  <main class="paddings">
+    <div class="logo">
+      <img src="resources/logo.svg" class="">
+    </div>
+
+    <section class="info">
+      <div class="info-block">
+        <p class="title-text">БЫСТРО</p>
+        <img src="resources/shape.svg">
+        <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ
+          СТРИЖКИ-МИНУТКИ!</p>
+      </div>
+      <div class="info-block">
+        <p class="title-text">КРУТО</p>
+        <img src="resources/shape.svg">
+        <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+      </div>
+      <div class="info-block">
+        <p class="title-text">ДОРОГО</p>
+        <img src="resources/shape.svg">
+        <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА
+          НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
+      </div>
+    </section>
+
+    <section class="white-block">
+      <div class="white-block__column">
+        <p class="title-text">НОВОСТИ</p>
+        <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ<br><br>
+          11 января<br><br>
+          В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ
+          СТРОЙНЫЕ РЯДЫ<br><br>
+          18 января
+        </p>
+        <button href="#" class="white-block__button button-text">ВСЕ НОВОСТИ</button>
+      </div>
+      <img src="resources/divider.png" style="height: 75%; align-self: center;">
+      <div class="white-block__column">
+        <p class="title-text">ФОТОГАЛЕРЕЯ</p>
+        <img src="resources/photogalery.svg">
+        <div class="white-block__buttons-container">
+          <button class="white-block__button button-text">ВПЕРЕД</button>
+          <button class="white-block__button button-text">НАЗАД</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="white-block">
+      <div class="white-block__column">
+        <p class="title-text">КОНТАКТНАЯ ИНФОРМАЦИЯ</p>
+        <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+          ТЕЛЕФОН: +7 (495) 666-02-66
+        </p>
+        <p>ВРЕМЯ РАБОТЫ:<br>ПН—ПТ: С 10:00 ДО 22:00<br>СБ—ВС: С 10:00 ДО 19:00
+        </p>
+
+        <div class="white-block__buttons-container">
+          <button class="white-block__button button-text">КАК ПРОЕХАТЬ</button>
+          <button class="white-block__button button-text">ОБРАТНАЯ СВЯЗЬ</button>
         </div>
 
-        <section class="info">
-          <div class = "info-block">
-              <p class="title-text">БЫСТРО</p>
-              <img src="resources/shape.svg">
-              <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+      </div>
+      <div class="white-block__column">
+        <p class="title-text">ЗАПИСАТЬСЯ</p>
+        <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ
+          С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+        </p>
+        <form class="" action="#">
+          <div class="">
+            <div>
+              <label for="date">ДАТА</label>
+              <input type="text" id="date" name="date"><br>
+            </div>
+            <div>
+              <label for="date">ВРЕМЯ</label>
+              <input type="text" id="date" name="date"><br>
+            </div>
+            <div>
+              <label for="name">ВАШЕ ИМЯ</label>
+              <input type="text" id="name" name="name"><br>
+            </div>
+            <div>
+              <label for="phonenum">ТЕЛЕФОН</label>
+              <input type="text" id="phonenum" name="phonenum"><br>
+            </div>
           </div>
-          <div class = "info-block">
-              <p class="title-text">КРУТО</p>
-              <img src="resources/shape.svg">
-              <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
-          </div>
-          <div class = "info-block">
-              <p class="title-text">ДОРОГО</p>
-              <img src="resources/shape.svg">
-              <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА 
-                НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
-          </div>
-        </section>
+          <input type="submit" value="ОТПРАВИТЬ">
+        </form>
+      </div>
+    </section>
+  </main>
+  </main>
+  <footer></footer>
+  </div>
+</body>
 
-        <section class="white-block">
-              <div class="white-block__column">
-                  <p class = "title-text">НОВОСТИ</p>
-                  <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ<br><br>
-                  11 января<br>
-                  В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ 
-                  СТРОЙНЫЕ РЯДЫ<br><br>
-                  18 января
-                  </p>
-                  <button><a href="#">ВСЕ НОВОСТИ</a></button>
-              </div>
-              <div class="white-block__column">
-                  <p class="title-text">ФОТОГАЛЕРЕЯ</p>
-                  <img src="resources/photogalery.svg">
-                  <div>
-                      <button>ВПЕРЕД</button>
-                      <button>НАЗАД</button>
-                  </div>
-              </div>
-      </section>
-
-      </main>
-      <footer></footer>
-    </div>
-  </body>
 </html>
