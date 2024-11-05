@@ -1,0 +1,190 @@
+:root {
+    --left-padding: 15%;
+    --right-padding: 15%;
+    --font-size-title: 24px;
+    --font-size-text: 16px;
+    --font-size-button: 16px;
+  }
+
+body {
+  width: 100%;
+  background-image: url(resources/background.png);
+  background-size: cover;
+  margin:0;
+  padding:0;
+  font-family: 'Calibri', 'Courier New', Courier, monospace;
+  font-size: var(--font-size-text);
+}
+
+/* блоки? хз*/
+.button-text{
+  color: #f2f2f2;
+  font-size: var(--font-size-button);
+}
+
+.title-text {
+  font-size: var(--font-size-title);
+  font-weight: bolder;
+}
+
+.white-block{
+  display: flex;
+  justify-content: space-evenly;
+  background: #F6F3F0;
+  /* width: 100%; */
+  height: auto;
+  text-align: left;
+  margin-bottom: 4vh; /* я знаю что так нельзя но не знаю как по-другому(( */
+}
+
+.white-block__column{
+  flex: 25%;
+  display: flex;           
+  align-items: left;
+  text-align: left;         
+  flex-direction: column;
+  padding: 6vh; 
+}
+
+.white-block__button{
+  margin-top: 1vh;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: none;
+  width: 45%;
+  height: 6vh;
+}
+
+.white-block__button_full-width{
+  width: 100%;
+}
+
+.white-block__button:hover{
+  background-color: #333; 
+}
+
+.white-block__buttons-container{
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.paddings{
+    padding-left: var(--left-padding);
+    padding-right: var(--right-padding);
+}
+
+.navbar{
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  height: 7vh;
+  align-items: center;
+}
+
+.navbar__button{
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  color: #f2f2f2;
+  height: 100%;
+  padding: 0 1.3vh;
+  text-decoration: none;
+  align-items: center;
+}
+
+.navbar__button:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar__button_login{
+  margin-left: auto;
+  padding: 0 2vh;
+}
+
+.navbar__button_login img{
+ padding-right: 1vb;
+}
+
+.logo {
+  display: flex;                 
+  justify-content: center;        
+  align-items: center;           
+  height: auto;                
+  padding: 10vh 10vh;
+}
+
+.info{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2vh;
+  padding-bottom:  4vh;
+}
+
+.info-block {
+  color: #fff;
+  flex: 30%;
+  display: flex;             
+  align-items: center;
+  text-align: center;         
+  flex-direction: column;
+  padding: 1vh;     
+}
+
+.reg-form-fields{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2vh;
+  padding-bottom: 3vh;
+}
+
+.reg-form-fields label {
+  margin-bottom: 2vh;
+  font-weight: bold;
+  padding-left: 1vh;
+  text-align: left;
+}
+
+.reg-form-fields input[type="text"] {
+  width: 100%;
+  margin-top: 1vh;
+  padding: 1.5vh;
+  box-sizing: border-box;
+  border: 3px solid black;
+}
+
+.divider{
+  content: url(resources/divider.png);
+  height: 75%;
+  align-self: center;
+}
+
+footer{
+  background-color: #242424;
+  align-items: center;
+  text-align: left; 
+  align-content: center;
+  width: 100%;
+  height: auto;
+  padding-top: 2vb;
+  padding-bottom: 2vb;
+}
+
+.footer-rows{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-rows__images img{
+  display: inline-block;
+  background-color: black;
+  padding: 10px;
+  width: 3vh;
+  height: 3vh;   
+  object-fit: contain;
+}
+
